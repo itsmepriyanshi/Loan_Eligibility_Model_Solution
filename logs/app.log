@@ -1,0 +1,4 @@
+2024-08-03 14:53:23,215 - ERROR - "['Loan_Approved'] not found in axis"
+2024-08-03 14:55:30,785 - ERROR - "Column 'Loan_Approved' not found in the dataset."
+2024-08-03 14:56:42,433 - ERROR - "Column 'Loan_Approved' not found in the dataset."
+2024-08-03 14:57:33,547 - ERROR - The 'max_features' parameter of RandomForestClassifier must be an int in the range [1, inf), a float in the range (0.0, 1.0], a str among {'sqrt', 'log2'} or None. Got 'auto' instead.
