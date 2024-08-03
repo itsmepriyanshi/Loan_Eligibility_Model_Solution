@@ -1,23 +1,26 @@
-# Loan Eligibility Model Solution
+# Credit Loan Prediction
 
-Project Overview
-This project establishes a robust machine learning model to predict loan eligibility for applicants using the German Credit dataset. This dataset encompasses details of 614 applicants, including 13 attributes and a binary classification indicating whether a loan was granted or denied.
+This project aims to predict loan approval status based on various features using machine learning models. The dataset includes attributes like 'Gender', 'Married', 'Dependents', 'Education', 'Self_Employed', 'Property_Area', 'LoanAmount', and 'Credit_History', and the target variable is 'Loan_Status'.
 
-File Structure
-The project is meticulously organized to promote clarity and maintainability:
+## Project Structure
 
-data/: Houses the data files essential for analysis.
+The project is organized as follows:
 
-mall_customers.csv: This file contains the primary dataset for loan applicant information.
-logs/: Serves as a repository for capturing application activity.
+- `main.py`: Entry point of the application. This script loads the dataset, processes it, trains models, evaluates them, and logs results.
+- `src/data_preprocessing.py`: Contains functions for loading data, handling missing values, encoding categorical variables, and scaling data.
+- `src/models.py`: Contains functions for training Logistic Regression and Random Forest models.
+- `src/evaluation.py`: Contains functions for evaluating the performance of trained models.
+- `src/utils.py`: Contains utility functions for logging setup and error logging.
+- `logs/app.log`: Log file where application logs and errors are recorded.
 
-mall_customer_segmentation.log: This log file diligently tracks actions pertaining to loan eligibility predictions.
-src/: Encapsulates the core source code modules that drive the project's functionality.
+## Requirements
 
-init.py: This initialization file is crucial for ensuring the src directory is recognized as a Python package.
-clustering.py: (Optional) If your project includes clustering tasks, this file would store associated functions.
-data_preparation.py: This module effectively handles data loading, preprocessing, and cleaning operations.
-visualization.py: This module provides an arsenal of functions for visually exploring the data and presenting results in an informative manner.
-main.py: The central script that orchestrates the entire project execution.
-requirements.txt: This plain text file meticulously specifies all external Python libraries necessary for the project to function seamlessly.
+Make sure to install the following Python packages to run this project:
 
+- `pandas`
+- `scikit-learn`
+
+You can install these dependencies using pip:
+
+```bash
+pip install -r requirements.txt
